@@ -13,6 +13,12 @@ class ProductsController < ApplicationController
     render json: @product
   end
 
+  def index_by_category
+    @products = Product.where(category: product_params[:category])
+
+    render json: @products
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
