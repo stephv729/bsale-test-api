@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "main#index"
   resources :products, only: %i[index show]
   resources :categories, only: %i[index]
   get "products_by_category", :to => "products#index_by_category"
