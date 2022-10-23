@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show update destroy ]
+  before_action :set_product, only: %i[ show ]
 
   # GET /products
   def index
@@ -11,12 +11,6 @@ class ProductsController < ApplicationController
   # GET /products/1
   def show
     render json: @product
-  end
-
-  def index_by_category
-    @products = Product.where(category: product_params[:category])
-
-    render json: @products
   end
 
   private
