@@ -1,24 +1,49 @@
-# README
+# BSale_Test API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API enables connection between bsale_test DB and a front-end app.
+## Run Locally
 
-Things you may want to cover:
+Clone the project
 
-* Ruby version
+```bash
+  git clone git@github.com:stephv729/bsale-test-api.git
+```
 
-* System dependencies
+Go to the project directory
 
-* Configuration
+```bash
+  cd bsale-test-api
+```
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+## Project Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+Install all gems:
 
-* Deployment instructions
+```bash
+  bundle install
+```
 
-* ...
+Since this API has been created on top of an existing database. There is not need to run migrations or seed files.
+
+Before starting the server, verify you have set all the required env variables. Please check the .env.example file.
+
+Start the web server on localhost port 8000:
+
+```bash
+  rails s -p 8000
+```
+## Usage
+Insomnia is a GUI REST client and there is collection as a JSON file in the root of this repo. By importing it you can explore this API and get a better understanding of the requests and responses.
+
+Nevertheless, here is a summary of the request and responses the API can recieve and send respectively.
+
+
+| HTTP verbs | Paths     | Used for                |
+| :-------- | :------- | :------------------------- |
+| `GET` | /categories | List all categories |
+| `GET` | /categories/:category_id/products | List all products of a given category |
+| `GET` | /products | List all products |
+| `GET` | /products/:product_id | Show a single product |
+
