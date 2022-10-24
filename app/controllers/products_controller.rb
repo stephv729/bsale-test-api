@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show ]
+  before_action :set_product, only: %i[show]
 
   # GET /products
   def index
