@@ -1,0 +1,239 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-10-24T01:22:21.064Z",
+  "__export_source": "insomnia.desktop.app:v2022.6.0",
+  "resources": [
+    {
+      "_id": "req_e1b0429e9a974346bb97cf9e9f25c6aa",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666486990856,
+      "created": 1666486978607,
+      "url": "{{ _.BASE_URL }}",
+      "name": "Welcome",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1666486978607,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "parentId": null,
+      "modified": 1666478781848,
+      "created": 1666478781848,
+      "name": "bsale-test",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_453b6558075649b2b83d1a4a8caeb95c",
+      "parentId": "fld_a4c53f9af61e41bda0124453ad6590c1",
+      "modified": 1666562545420,
+      "created": 1666478868357,
+      "url": "{{ _.BASE_URL }}/categories/4/products",
+      "name": "Products",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1666479126375,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_a4c53f9af61e41bda0124453ad6590c1",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666479122432,
+      "created": 1666479122432,
+      "name": "Categories",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1666479122432,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_cfbd8101aff14324825a8a138bb80da8",
+      "parentId": "fld_a4c53f9af61e41bda0124453ad6590c1",
+      "modified": 1666479181562,
+      "created": 1666479126325,
+      "url": "{{ _.BASE_URL }}/categories",
+      "name": "Index",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1666479126325,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f44f056b41de413797fa6b597e795f22",
+      "parentId": "fld_3c25a0d758794b5bade15599388c4cd3",
+      "modified": 1666478822034,
+      "created": 1666478813440,
+      "url": "",
+      "name": "Show",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1666478813440,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_3c25a0d758794b5bade15599388c4cd3",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666478797006,
+      "created": 1666478797006,
+      "name": "Products",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1666478797006,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_09ce6f3a174e4df580555bcdd04923ae",
+      "parentId": "fld_3c25a0d758794b5bade15599388c4cd3",
+      "modified": 1666479377583,
+      "created": 1666478798489,
+      "url": "{{ _.BASE_URL }}/products",
+      "name": "Index",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1666478798489,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_7a386c5e14b4f55f7fabd0c46192be3477d9dade",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666486451825,
+      "created": 1666478781860,
+      "name": "Base Environment",
+      "data": {
+        "BASE_URL": "http://localhost:8000",
+        "token": ""
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "BASE_URL",
+          "token"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1666478781860,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_7a386c5e14b4f55f7fabd0c46192be3477d9dade",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666478781863,
+      "created": 1666478781863,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_2424f3f693b34881b90c798611ddbe5f",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666478781852,
+      "created": 1666478781852,
+      "fileName": "bsale-test",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_779e0643dcbd4f3eb23ea4ee11f0499b",
+      "parentId": "env_7a386c5e14b4f55f7fabd0c46192be3477d9dade",
+      "modified": 1666486468466,
+      "created": 1666478895339,
+      "name": "localhost",
+      "data": {
+        "BASE_URL": "http://localhost:8000",
+        "token": ""
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "BASE_URL",
+          "token"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1666478895339,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_b87c4f521fcb48a99b33edf00b745ac9",
+      "parentId": "env_7a386c5e14b4f55f7fabd0c46192be3477d9dade",
+      "modified": 1666486968141,
+      "created": 1666486392217,
+      "name": "railway",
+      "data": {
+        "BASE_URL": "bsale-test-api-production.up.railway.app",
+        "token": ""
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "BASE_URL",
+          "token"
+        ]
+      },
+      "color": "#821717",
+      "isPrivate": false,
+      "metaSortKey": 1666486392217,
+      "_type": "environment"
+    }
+  ]
+}
