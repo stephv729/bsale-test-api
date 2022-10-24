@@ -1,3 +1,4 @@
+
 # BSale_Test API
 
 This API enables connection between bsale_test DB and a front-end app.
@@ -27,9 +28,10 @@ Install all gems:
 
 Since this API has been created on top of an existing database, there is not need to run migrations or seed files.
 
-Before starting the server, verify you have set all the required env variables. Please check the .env.example file.
 
-Start the web server on localhost port 8000:
+Before starting the server, verify you have set all the required env variables. Please check the *.env.example file*.
+
+Start the web server on `http://localhost:8000`:
 
 ```bash
   rails s -p 8000
