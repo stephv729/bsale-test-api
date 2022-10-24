@@ -25,7 +25,7 @@ Install all gems:
   bundle install
 ```
 
-Since this API has been created on top of an existing database. There is not need to run migrations or seed files.
+Since this API has been created on top of an existing database, there is not need to run migrations or seed files.
 
 Before starting the server, verify you have set all the required env variables. Please check the .env.example file.
 
