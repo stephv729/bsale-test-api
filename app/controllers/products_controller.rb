@@ -9,10 +9,11 @@ class ProductsController < ApplicationController
   end
 
   def search_by_name
-    @products = Product.where("name LIKE ?" , "%#{params[:name]}%")
+    @products = Product.where("name LIKE ?", "%#{params[:name]}%")
+    @products = @products.where(category: params[:category]) if params[:category]
     render json: @products
   end
-  
+
   # GET /products/1
   def show
     render json: @product
@@ -23,10 +24,5 @@ class ProductsController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_product
     @product = Product.find(params[:id])
-  end
-
-  # Only allow a list of trusted parameters through.
-  def product_params
-    params.require(:product).permit(:name, :url_image, :price, :discount, :category)
   end
 end
