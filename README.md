@@ -48,4 +48,5 @@ Nevertheless, here is a summary of the request and responses the API can recieve
 | `GET` | /categories/:category_id/products | List all products of a given category |
 | `GET` | /products | List all products |
 | `GET` | /products/:product_id | Show a single product |
+| `GET` | /search?name=some_name&category=category_id | List all products that match the given name and category. Category parameter is optional.  |
 
