@@ -8,6 +8,11 @@ class ProductsController < ApplicationController
     render json: @products
   end
 
+  def search_by_name
+    @products = Product.where("name LIKE ?" , "%#{product_params[:name]}%")
+    render json: @products
+  end
+  
   # GET /products/1
   def show
     render json: @product
