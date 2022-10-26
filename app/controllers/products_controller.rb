@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     render json: @products
   end
 
-  def search_by_name
+  def search
     @products = Product.where("name LIKE ?", "%#{params[:name]}%")
     @products = @products.where(category: params[:category]) if params[:category]
     render json: @products
