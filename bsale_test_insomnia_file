@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2022-10-24T01:22:21.064Z",
+  "__export_date": "2022-10-26T19:34:30.334Z",
   "__export_source": "insomnia.desktop.app:v2022.6.0",
   "resources": [
     {
@@ -96,6 +96,41 @@
       "_type": "request"
     },
     {
+      "_id": "req_3939118cdb47412bb5e34444ddc3dd96",
+      "parentId": "fld_3c25a0d758794b5bade15599388c4cd3",
+      "modified": 1666803697305,
+      "created": 1666796409127,
+      "url": "{{ _.BASE_URL }}/search?name=ab&category=3",
+      "name": "Search",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1666478813490,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_3c25a0d758794b5bade15599388c4cd3",
+      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
+      "modified": 1666478797006,
+      "created": 1666478797006,
+      "name": "Products",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1666478797006,
+      "_type": "request_group"
+    },
+    {
       "_id": "req_f44f056b41de413797fa6b597e795f22",
       "parentId": "fld_3c25a0d758794b5bade15599388c4cd3",
       "modified": 1666478822034,
@@ -117,18 +152,6 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
-    },
-    {
-      "_id": "fld_3c25a0d758794b5bade15599388c4cd3",
-      "parentId": "wrk_9c995161509f4bd3b2fb1e1d01f1efd7",
-      "modified": 1666478797006,
-      "created": 1666478797006,
-      "name": "Products",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1666478797006,
-      "_type": "request_group"
     },
     {
       "_id": "req_09ce6f3a174e4df580555bcdd04923ae",
