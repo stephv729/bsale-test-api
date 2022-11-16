@@ -37,7 +37,7 @@ Start the web server on `http://localhost:8000`:
   rails s -p 8000
 ```
 ## Usage
-Insomnia is a GUI REST client and there is collection as a JSON file in the root of this repo. By importing it you can explore this API and get a better understanding of the requests and responses.
+Insomnia is a GUI REST client and there is a collection as a JSON file in the root of this repo. By importing it you can explore this API and get a better understanding of the requests and responses.
 
 Nevertheless, here is a summary of the request and responses the API can recieve and send respectively.
 
